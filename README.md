@@ -1,1 +1,2 @@
 # myPage
+My new page
