@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    background-color: #f4f4f4;
+    color: #555555;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    background: #f3f3f3 !important;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20 px 0x;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3 !important;
+}
+
+.dropbtn {
+    color: #666;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dbd6d6;
+    font-size: .9rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 1s ease;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #666;
+    color: #f3f3f3;
+    transition: all .5s ease;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar ul li {
+    float: center;
+    font-size: 1.1rem;
+}
+
+.navbar ul li:last-child {
+    border-right: none;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #666;
+    color: #f3f3f3;
+}
+
+.dropbtn:hover {
+    background-color: #666;
+    color: #f3f3f3;
+}
+
+.active {
+    background-color: #414242;
+}
+
+
+/* Home Section*/
+
+#home {
+    display: flex;
+    background-color: #f3f3f3;
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Home Section - Alternating Text Animation*/
+
+.wrapper {
+    display: inline-flex;
+    margin: 0;
+    position: absolute;
+    min-height: 90px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wrapper .static-text {
+    font-size: 60px;
+    font-weight: 400;
+    height: 90px;
+    line-height: 90px;
+    color: lightgray;
+}
+
+.wrapper .dynamic-text {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(8) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -720px
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f3f3f3;
+    border-left: 2px solid #666;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100%+30px);
+    }
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .8;
+}
+
+
+/* About Me Section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img {
+    width: 575px;
+    height: 400px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Footer Section */
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+/* Footer Section: social media */
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a:hover i {
+    color: darkgray;
+}
+
+.fa-facebook-square {
+    background: white;
+    color: #666;
+}
+
+.fa-twitter-square {
+    background: white;
+    color: #666;
+}
+
+.fa-linkedin-square {
+    background: white;
+    color: #666;
+}
+
+.fa-instagram {
+    background: white;
+    color: #666;
+}
