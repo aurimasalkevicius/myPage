@@ -241,6 +241,26 @@ body {
     margin-bottom: 20px;
 }
 
+#intro a {
+    text-decoration: none;
+    color: #555555;
+    /* display: none; */
+}
+
+#intro a p {
+    /* text-decoration: none; */
+    visibility: hidden;
+}
+
+#intro a:hover p {
+    display: block;
+    visibility: visible;
+}
+
+#intro a:hover {
+    text-decoration: none;
+}
+
 
 /* Footer Section */
 
