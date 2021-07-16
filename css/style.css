@@ -28,7 +28,7 @@ body {
 .navbar ul {
     display: flex;
     list-style: none;
-    margin: 20 px 0x;
+    margin: 20px 0;
     padding: 0;
     overflow: hidden;
     background-color: #f3f3f3 !important;
@@ -42,10 +42,6 @@ body {
     padding: 14px 16px;
     border: none;
     cursor: pointer;
-}
-
-.dropdown {
-    position: flex;
 }
 
 .dropdown-content {
@@ -88,7 +84,6 @@ body {
 }
 
 .navbar ul li {
-    float: center;
     font-size: 1.1rem;
 }
 
@@ -191,10 +186,6 @@ body {
 }
 
 @keyframes typing {
-    40%,
-    60% {
-        left: calc(100%+30px);
-    }
     100% {
         left: 100%;
         margin: 0 -35px 0 35px;
@@ -244,11 +235,9 @@ body {
 #intro a {
     text-decoration: none;
     color: #555555;
-    /* display: none; */
 }
 
 #intro a p {
-    /* text-decoration: none; */
     visibility: hidden;
 }
 
