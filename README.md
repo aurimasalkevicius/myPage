@@ -1,4 +1,7 @@
 # myPage
+
+Access page - https://aurimasalkevicius.github.io/myPage/html/index.html
+
 File: index.html
 GUI Assignment: Creating Your First Web Page
 Aurimas Alkevicius, UMass Lowell Computer Science, aurimas_alkevicius@cs.uml.edu
