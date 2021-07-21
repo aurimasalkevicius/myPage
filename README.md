@@ -1,4 +1,4 @@
-# index.html
+# readme 
 
 Access page - https://aurimasalkevicius.github.io/myPage/html/index.html
 
